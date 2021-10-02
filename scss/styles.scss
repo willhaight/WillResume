@@ -1,0 +1,169 @@
+//$blue:rgb(46,188,174);
+$blue:#944447;
+@mixin colScheme{
+    color: $blue;
+    width:95%;
+    border-bottom:4px solid $blue;
+    margin-bottom:10px;
+}
+body {
+    padding:0;
+    margin:0;
+    background-color:#FFFFFF;
+    color:#000000;
+    display:flex;
+    font-size:1.5vw;
+    }
+    h1, h2, p {
+        margin:0;
+        padding:0;
+    }
+
+.rightCol {
+    width:75%;
+    .par1{
+    background-color: $blue;
+    color:#ffffff;
+    padding:10px 10px 20px 10px;
+    margin-bottom:10px;
+    width:93%;
+    h3 {
+        border-bottom:1px solid white;
+        width:30%;
+    }
+    }
+    p {
+        width:95%;
+    }
+}
+.par2{
+    margin-bottom:10px;
+    h2 {
+        @include colScheme
+    }
+    p {
+        margin-top:15px;
+    }
+}
+.par3 {
+    margin-bottom:10px;
+    h2 {
+        @include colScheme
+    }
+    p {
+        margin-top:15px;
+    }
+}
+.par4 {
+    margin-bottom:10px;
+    h2 {
+        @include colScheme
+    }
+    p {
+        margin-bottom:15px;
+    }
+}
+.par5 {
+    margin-bottom:10px;
+    h2 {
+        @include colScheme
+    }
+    p {
+        margin-bottom:15px;
+    }
+}
+.leftCol {
+    width:25%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    div {
+        display:flex;
+        i {
+            padding-right:5px;
+            margin-top:1px;
+        }
+    }
+}
+img {
+    border-radius: 50%;
+    max-width: 50%;
+    height: auto;
+      }
+
+.skills{
+    display:flex;
+    flex-direction: column;
+    margin-bottom:10px;
+    width:80%;
+    align-items: center;
+    h2 {
+        @include colScheme
+    }
+    p, a {
+        margin-bottom:15px;
+        background-color: $blue;
+        color:white;
+        width:fit-content;
+        padding: 5px 5px 5px 5px;
+    }
+}
+.contact{
+    display:flex;
+    flex-direction: column;
+    margin-bottom:10px;
+    width:80%;
+    align-items: center;
+    h2 {
+        @include colScheme
+    }
+    p, a {
+        margin-bottom:15px;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    body {
+        font-size: 2.5vw;
+        .leftCol {
+            width:35%;
+            .contact h2, .contact p, .contact a {
+                padding-bottom:40px;
+            }
+            .skills p, .skills h2{
+                padding-bottom:5px;
+                margin-bottom:40px;
+            }
+        }
+        .rightCol{
+           width:65%;
+
+        }
+    }
+}
+
+@media only screen and (max-width: 600px){
+    body {
+        flex-direction:column;
+        font-size: 3.5vw;
+        align-items: center;
+            justify-content: center;
+            .leftCol {
+                width:100%;
+                .contact h2, .contact p, .contact a {
+                    padding-bottom:5px;
+                }
+                .skills p, .skills h2{
+                    padding-bottom:5px;
+                    margin-bottom:15px;
+                }
+                .skills {
+                    margin-bottom:50px;
+                }
+            }
+        .rightCol{
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
