@@ -19,7 +19,7 @@ h1, h2, p {
   background-color: #944447;
   color: #ffffff;
   padding: 10px 10px 20px 10px;
-  margin-bottom: 10px;
+  margin-bottom: 70px;
   width: 93%;
 }
 .rightCol .par1 h3 {
@@ -31,7 +31,7 @@ h1, h2, p {
 }
 
 .par2 {
-  margin-bottom: 10px;
+  margin-bottom: 70px;
 }
 .par2 h2 {
   color: #944447;
@@ -44,7 +44,7 @@ h1, h2, p {
 }
 
 .par3 {
-  margin-bottom: 10px;
+  margin-bottom: 70px;
 }
 .par3 h2 {
   color: #944447;
@@ -57,7 +57,7 @@ h1, h2, p {
 }
 
 .par4 {
-  margin-bottom: 10px;
+  margin-bottom: 70px;
 }
 .par4 h2 {
   color: #944447;
@@ -70,7 +70,7 @@ h1, h2, p {
 }
 
 .par5 {
-  margin-bottom: 10px;
+  margin-bottom: 70px;
 }
 .par5 h2 {
   color: #944447;
@@ -148,14 +148,29 @@ img {
     width: 35%;
   }
   body .leftCol .contact h2, body .leftCol .contact p, body .leftCol .contact a {
-    padding-bottom: 40px;
+    padding-bottom: 10px;
   }
   body .leftCol .skills p, body .leftCol .skills h2 {
     padding-bottom: 5px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
   body .rightCol {
     width: 65%;
+  }
+  body .rightCol .par1 {
+    margin-bottom: 30px;
+  }
+  body .rightCol .par2 {
+    margin-bottom: 30px;
+  }
+  body .rightCol .par3 {
+    margin-bottom: 30px;
+  }
+  body .rightCol .par4 {
+    margin-bottom: 30px;
+  }
+  body .rightCol .par5 {
+    margin-bottom: 30px;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -173,10 +188,10 @@ img {
   }
   body .leftCol .skills p, body .leftCol .skills h2 {
     padding-bottom: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
   body .leftCol .skills {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
   }
   body .rightCol {
     align-items: center;
